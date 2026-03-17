@@ -1,3 +1,4 @@
+package estruturaSequencial;
 import java.util.Scanner;
 
 public class Atividade3 {
