@@ -1,7 +1,7 @@
-package estruturaCondicional;
+package estruturaCondicional.Encadeamento;
 import java.util.Scanner;
 
-public class ex11 {
+public class ex05 {
     
     public static void main(String[] args) {
      

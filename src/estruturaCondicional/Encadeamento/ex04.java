@@ -1,8 +1,8 @@
-package estruturaCondicional;
+package estruturaCondicional.Encadeamento;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex08 {
+public class ex04 {
     
     public static void main(String[] args) {
 

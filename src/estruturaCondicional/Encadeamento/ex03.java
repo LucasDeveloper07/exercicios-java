@@ -1,8 +1,8 @@
-package estruturaCondicional;
+package estruturaCondicional.Encadeamento;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex07 {
+public class ex03 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);

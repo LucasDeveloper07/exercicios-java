@@ -1,4 +1,4 @@
-package estruturaCondicional;
+package estruturaCondicional.IfElse;
 
 import java.util.Scanner;
 

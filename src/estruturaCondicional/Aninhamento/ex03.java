@@ -1,7 +1,7 @@
-package estruturaCondicional;
+package estruturaCondicional.Aninhamento;
 import java.util.Scanner;
 
-public class ex12 {
+public class ex03 {
 
     public static void main(String[] args) {
         

@@ -1,10 +1,7 @@
-// Código corrigido
-// Versão inicial do código era funcional porém possuia excesso de variáveis e repetições
-
-package estruturaCondicional;
+package estruturaCondicional.Encadeamento;
 import java.util.Scanner;
 
-public class ex05 {
+public class ex01 {
     
     public static void main(String[] args) {
 
