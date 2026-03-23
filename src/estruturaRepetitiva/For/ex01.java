@@ -1,7 +1,7 @@
 package estruturaRepetitiva.For;
 import java.util.Scanner;
 
-public class ex05 {
+public class ex01 {
 
     public static void main(String[] args) {
         
@@ -12,7 +12,7 @@ public class ex05 {
         System.out.println("Informe um número inteiro (o número deve ser maior ou igual a 1 e menor ou igual a 1000): ");
         num1 = sc.nextInt();
 
-        for (int i = 1; i <= num1; i++) {
+        for (int i=1; i<=num1; i++) {
             if (i %2 != 0) {
                 System.out.println(i);
             }
