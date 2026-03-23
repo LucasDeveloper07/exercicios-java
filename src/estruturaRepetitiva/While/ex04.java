@@ -1,4 +1,4 @@
-package estruturaRepetitiva;
+package estruturaRepetitiva.While;
 import java.util.Scanner;
 
 public class ex04 {
