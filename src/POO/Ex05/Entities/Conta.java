@@ -29,7 +29,7 @@ public class Conta {
     
     public void deposito(double valor) {
         
-        if (valor <=0) {
+        if (valor <= 0) {
             System.out.println("Valor inválido!\n");
         }
         else {
@@ -48,9 +48,9 @@ public class Conta {
         else {
             saldo -= (valor + 5);
 
-                System.out.printf("\nValor sacado: %.2f\n", valor);
-                System.out.println("Taxa: R$5,00");
-                System.out.printf("Saldo: R$%.2f\n\n", saldo);
+            System.out.printf("\nValor sacado: %.2f\n", valor);
+            System.out.println("Taxa: R$5,00");
+            System.out.printf("Saldo: R$%.2f\n\n", saldo);
         }
     }
     
