@@ -26,7 +26,6 @@ public class Conta {
         this.numero = numero + "-" + digito;
     }
 
-    
     public void deposito(double valor) {
         
         if (valor <= 0) {
