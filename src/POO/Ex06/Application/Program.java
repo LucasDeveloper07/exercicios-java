@@ -21,12 +21,10 @@ public class Program {
         Aluno aluno = new Aluno(nome, curso);
 
         while (true) {
-            
             System.out.println("\nInsira a nota da P1: ");
             p1 = sc.nextDouble();
 
             if (p1 >= 0 && p1 <= 10) {
-
                 aluno.setP1(p1);
                 break;
             } else {
@@ -35,12 +33,10 @@ public class Program {
         }
 
         while (true) {
-
             System.out.println("Insira a nota da P2: ");
             p2 = sc.nextDouble();
 
             if (p2 >= 0 && p2 <= 10) {
-                
                 aluno.setP2(p2);
                 break;
             } else {
@@ -49,12 +45,10 @@ public class Program {
         }
 
         while (true) {
-            
             System.out.println("Insira a nota da P3: ");
             p3 = sc.nextDouble();
 
             if (p3 >= 0 && p3 <= 10) {
-                
                 aluno.setP3(p3);
                 break;
             } else {
