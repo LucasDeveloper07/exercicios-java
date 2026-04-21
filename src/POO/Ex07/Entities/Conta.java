@@ -17,7 +17,17 @@ public class Conta {
     public Conta(String nome, int numero, double deposito) {
         this.nome = nome;
         this.numero = numero;
-        this.saldo = deposito;
+        depositar(deposito);
+    }
+
+    // Método para apenas retornar o número da conta
+    public int getNumero() {
+        return numero;
+    }
+
+    // Método para retornar o nome do titular
+    public String getNome() {
+        return nome;
     }
 
     // Método para alterar nome caso o cliente deseje alterar o nome
@@ -25,8 +35,13 @@ public class Conta {
         this.nome = nome;
     }
 
+    // Método para retornar o saldo
+    public double getSaldo() {
+        return this.saldo;
+    }
+
     // Método para realizar o depósito
-    public void setDeposito(double deposito) {
+    public void depositar(double deposito) {
         if (deposito < 0) {
             System.out.println("Valor inválido!");
         } else {
@@ -35,7 +50,7 @@ public class Conta {
     }
 
     // Método para realizar o saque
-    public void setSaque(double saque) {
+    public void sacar(double saque) {
         if (saque < 0) {
             System.out.println("Valor inválido!");
         } else if ((saque + 5) > this.saldo) {
@@ -45,17 +60,12 @@ public class Conta {
         }
     }
 
-    // Método para exibir saldo
-    public double getSaldo() {
-        return this.saldo;
-    }
-
     // Método para exibir os dados
-    public String getString() {
+    public String toString() {
         return "\nTitular: "
-            + nome
+            + getNome()
             + "\nConta: "
-            + numero
+            + getNumero()
             + String.format("\nSaldo: R$%.2f", getSaldo());
     }
 }

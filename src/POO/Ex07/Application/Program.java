@@ -27,8 +27,12 @@ public class Program {
         // Validação para decidir como o objeto será instanciado
         if (opcao == 1) {
             do {
-                System.out.print("Digite o valor do depósito: ");
+                System.out.print("\nDigite o valor do depósito: ");
                 deposito = sc.nextDouble();
+
+                if (deposito < 0) {
+                    System.out.println("Valor Inválido");
+                }
             } while (deposito < 0);
 
             conta = new Conta(nome, numero, deposito);
@@ -36,7 +40,7 @@ public class Program {
             conta = new Conta(nome, numero);
         }
 
-        System.out.println(conta.getString());
+        System.out.println(conta);
 
         // Menu de interação com o usuário
         do {
@@ -54,29 +58,31 @@ public class Program {
                 case 1:
                     System.out.print("\nInforme o valor a ser depositado: ");
                     deposito = sc.nextDouble();
-                    conta.setDeposito(deposito);
+                    conta.depositar(deposito);
 
                     if (deposito >= 0) {
-                        System.out.println(conta.getString());
+                        System.out.println(conta);
                     }
                     break;
                 case 2:
                     System.out.println("\nTaxa de saque: R$5,00");
                     System.out.print("Informe o valor a ser sacado: ");
                     saque = sc.nextDouble();
-                    conta.setSaque(saque);
                     
                     if ((saque + 5) <= conta.getSaldo()) {
-                        System.out.println(conta.getString());
+                        conta.sacar(saque);
+                        System.out.println(conta);
                     }
                     break;
                 case 3:
                     System.out.print("\nDigite o nome desejado: ");
                     nome = sc.nextLine();
                     conta.setNome(nome);
+
+                    System.out.println(conta);
                     break;
                 case 4:
-                    System.out.println(conta.getString());
+                    System.out.println(conta);
                     break;
             }
         } while (opcao != 5);
