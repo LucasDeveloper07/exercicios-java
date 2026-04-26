@@ -27,7 +27,5 @@ public class Pessoa {
     public double getAltura() {
         return altura;
     }
-
     // Não coloquei métodos setters, pois os atributos já são iniciados obrigatoriamente na instanciação do objeto
-
 }
