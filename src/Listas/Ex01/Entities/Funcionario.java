@@ -2,17 +2,17 @@ package Listas.Ex01.Entities;
 
 public class Funcionario {
     
-    private int id;
+    private Integer id;
     private String nome;
-    private double salario;
+    private Double salario;
 
-    public Funcionario(int id, String nome, double salario) {
+    public Funcionario(Integer id, String nome, Double salario) {
         this.id = id;
         this.nome = nome;
         this.salario = salario;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -24,27 +24,24 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public double getSalario() {
+    public Double getSalario() {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setSalario(Double salario) {
         this.salario = salario;
     }
 
     public void aumentoSalario(double porcent) {
         porcent = porcent / 100;
-        double salario = getSalario();
-
         salario += salario * porcent;
-        setSalario(salario);
     }
 
     public String toString() {
         return "ID: "
-            + getId()
+            + id
             + "\nNome: "
-            + getNome()
-            + String.format("\nSalario: %.2f", getSalario());
+            + nome
+            + String.format("\nSalario: R$%.2f", salario);
     }
 }
