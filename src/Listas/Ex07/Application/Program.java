@@ -29,7 +29,7 @@ public class Program {
             switch (opcao) {
                 case 1:
                     System.out.print("\nInforme o nome do produto: ");
-                    String nomeProduto =sc.nextLine();
+                    String nomeProduto = sc.nextLine();
                     
                     System.out.print("Informe a quantidade em estoque: ");
                     int quantProduto = sc.nextInt();
