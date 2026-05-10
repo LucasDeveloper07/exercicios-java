@@ -55,7 +55,7 @@ public class Trabalhador {
         this.departamento = departamento;
     }
 
-    public ArrayList<ContratoHoras> geContratoHoras() {
+    public ArrayList<ContratoHoras> getContratoHoras() {
         return contratos;
     }
 
