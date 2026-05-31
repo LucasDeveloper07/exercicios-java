@@ -39,6 +39,7 @@ public class Program {
         double dailyValue = sc.nextDouble();
 
         Vehicle vehicle = new Vehicle(typeVehicle, plateVehicle);
+
         try {
             Rental rental = new Rental(id, vehicle, dateStart, dateEnd, dailyValue);
             rental.validateDate();
@@ -53,8 +54,8 @@ public class Program {
             System.out.println("\n" + rental.reportGenerate(opcao));
         } catch (DateException e) {
             System.out.println(e.getMessage());
+        } finally {
+            sc.close();
         }
-
-        sc.close();
     }
 }
